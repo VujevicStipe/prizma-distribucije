@@ -11,6 +11,7 @@
     --light-bg: #F8FAFC;
     --text-dark: #1E293B;
     --text-light: #64748B;
+    --white: #ffffff;
 }
 
 body {
@@ -40,15 +41,8 @@ nav {
     align-items: center;
 }
 
-.logo {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: var(--text-dark);
-    letter-spacing: -0.02em;
-}
-
-.logo span {
-    color: var(--primary-green);
+.footer-logo {
+    margin-bottom: 1rem;
 }
 
 .nav-links {
