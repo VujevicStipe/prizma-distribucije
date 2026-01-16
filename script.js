@@ -24,6 +24,92 @@ gsap.to('.map-filled', {
     }
 });
 
+gsap.from('.hero-text h1', {
+    opacity: 0,
+    y: 30,
+    duration: 0.8,
+    ease: 'power2.out'
+});
+
+gsap.from('.hero-text p', {
+    opacity: 0,
+    y: 20,
+    duration: 0.8,
+    delay: 0.15,
+    ease: 'power2.out'
+});
+
+gsap.from('.cta-buttons', {
+    opacity: 0,
+    y: 20,
+    duration: 0.8,
+    delay: 0.3,
+    ease: 'power2.out'
+});
+
+gsap.from('.hero-image', {
+    opacity: 0,
+    scale: 0.98,
+    duration: 1,
+    delay: 0.2,
+    ease: 'power2.out'
+});
+
+gsap.from('.floating-card', {
+    opacity: 0,
+    y: 20,
+    duration: 0.6,
+    delay: 0.6,
+    stagger: 0.15,
+    ease: 'power2.out'
+});
+
+gsap.from('.app-text', {
+    scrollTrigger: {
+        trigger: '.app-section',
+        start: 'top 75%'
+    },
+    opacity: 0,
+    x: -30,
+    duration: 0.8,
+    ease: 'power2.out'
+});
+
+gsap.from('.phone-frame', {
+    scrollTrigger: {
+        trigger: '.app-section',
+        start: 'top 75%'
+    },
+    opacity: 0,
+    x: 30,
+    duration: 0.8,
+    delay: 0.15,
+    ease: 'power2.out'
+});
+
+gsap.from('.contact-info', {
+    scrollTrigger: {
+        trigger: '.contact-container',
+        start: 'top 80%'
+    },
+    opacity: 0,
+    x: -20,
+    duration: 0.7,
+    ease: 'power2.out'
+});
+
+gsap.from('.contact-form', {
+    scrollTrigger: {
+        trigger: '.contact-container',
+        start: 'top 80%'
+    },
+    opacity: 0,
+    x: 20,
+    duration: 0.7,
+    delay: 0.1,
+    ease: 'power2.out'
+});
+
 window.addEventListener('scroll', () => {
     const nav = document.querySelector('nav');
     const currentScroll = window.pageYOffset;
